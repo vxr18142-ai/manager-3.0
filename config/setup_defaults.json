@@ -1,0 +1,18 @@
+{
+  "roles.buttons": [
+    {
+      "label": "Main",
+      "role_id": 0,
+      "emoji": "🇪🇺"
+    }
+  ],
+  "roles.channel_id": 0,
+  "roles.panel_message_id": 0,
+  "tickets.inactivity_hours": 24,
+  "tickets.logs_channel_id": 0,
+  "tickets.panel_channel_id": 0,
+  "welcomer.bot_commands_channel_id": 0,
+  "welcomer.link_channel_id": 0,
+  "welcomer.shop_channel_id": 0,
+  "welcomer.welcome_channel_id": 0
+}
