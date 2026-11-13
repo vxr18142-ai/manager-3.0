@@ -1,5 +1,5 @@
 """
-wipe.py — Wipe Schedule Cog for Twix
+wipe.py — Wipe Schedule Cog for VOIDEX HQ
 
 Drop this file AND twix.png into your bot's cogs/ folder, then load with:
     await bot.load_extension("cogs.wipe")
@@ -25,7 +25,7 @@ TWIX_IMAGE = os.path.join(os.path.dirname(__file__), "twix.png")
 DEFAULT_DATA = {
     "next_wipe": None,
     "last_wipe": None,
-    "server_info": "TWIX 2X | 4 MAN MAX | EU | NO BPS | discord.gg/Pw2YEuRpD2",
+    "server_info": "VOIDEX HQ 2X | 4 MAN MAX | EU | NO BPS | discord.gg/Pw2YEuRpD2",
     "reminder": "❤️ favourite the server before wipe!",
 }
 
@@ -49,18 +49,18 @@ def build_wipe_embed(data: dict, has_image: bool) -> discord.Embed:
     next_wipe: int | None = data.get("next_wipe")
     last_wipe: int | None = data.get("last_wipe")
 
-    embed = discord.Embed(title="🗓️ Twix Wipe Schedule", color=0x5865F2)
+    embed = discord.Embed(title="🗓️ VOIDEX HQ Wipe Schedule", color=0x5865F2)
 
     # ── Next wipe field ────────────────────────────────────────────────────────
     if next_wipe and next_wipe > now_ts:
         embed.add_field(
-            name="🔵 Twix",
+            name="🔵 VOIDEX HQ",
             value=f"<t:{next_wipe}:F>\n<t:{next_wipe}:R>",
             inline=False,
         )
     else:
         embed.add_field(
-            name="🔵 Twix",
+            name="🔵 VOIDEX HQ",
             value="No upcoming wipe scheduled.\nAn admin can set one with `/setwipe`.",
             inline=False,
         )
@@ -171,7 +171,7 @@ class Wipe(commands.Cog):
 
     # ── !wipe prefix command ───────────────────────────────────────────────────
 
-    @commands.command(name="wipe", help="Show the Twix wipe schedule.")
+    @commands.command(name="wipe", help="Show the VOIDEX HQ wipe schedule.")
     async def wipe_prefix(self, ctx: commands.Context):
         data = load_data()
         has_image = os.path.exists(TWIX_IMAGE)

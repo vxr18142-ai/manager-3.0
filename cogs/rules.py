@@ -1,5 +1,5 @@
 """
-rules.py — Rules Cog for Twix
+rules.py — Rules Cog for VOIDEX HQ
 
 Drop this file into your bot's cogs/ folder and load it with:
     await bot.load_extension("cogs.rules")
@@ -22,13 +22,13 @@ from utils.approval import ApprovalModal, ApprovalView
 DATA_FILE = os.path.join(os.path.dirname(__file__), "rules_data.json")
 
 DEFAULT_DATA = {
-    "title": "Twix Rules 📋",
+    "title": "VOIDEX HQ Rules 📋",
     "description": (
         "Thank you all for reading and respecting these rules.\n"
         "They were established to provide the best gaming experience and were created "
         "with the aim of offering you the best competitive server."
     ),
-    "embed_footer": "Powered by Twix",
+    "embed_footer": "Powered by VOIDEX HQ",
     "rules_footer": "Purchase Rules • 2026",
     "message_id": None,
     "channel_id": None,
