@@ -192,7 +192,7 @@ class RoleButtons(commands.Cog):
             lines = ["No buttons configured yet. Use `/roles setbutton` to add them."]
 
         embed.add_field(name="Available", value="\n".join(lines), inline=False)
-        embed.set_footer(text="Twix Core")
+        embed.set_footer(text="VOIDEX HQ Core")
         return embed
 
     async def post_or_update_panel(self, guild: discord.Guild) -> Optional[discord.Message]:

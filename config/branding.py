@@ -19,6 +19,6 @@ def _parse_color(val: str | None) -> int:
             return 0x0000ff
 
 
-BRAND_NAME = os.getenv("BRAND_NAME", "Twix Core")
+BRAND_NAME = os.getenv("BRAND_NAME", "VOIDEX HQ Core")
 EMBED_COLOR = _parse_color(os.getenv("EMBED_COLOR", None))
-FOOTER_TEXT = os.getenv("FOOTER_TEXT", "Twix Core")
+FOOTER_TEXT = os.getenv("FOOTER_TEXT", "VOIDEX HQ Core")

@@ -56,7 +56,7 @@ DB_PATH: str = os.environ.get("DB_PATH", "eclipse.db")
 # ── Constants ──────────────────────────────────────────────────────────────────
 
 THEME_COLOR = int(os.getenv("THEME_COLOR", str(0xFF0000)))
-SERVER_NAME = os.getenv("SERVER_NAME", "Twix")
+SERVER_NAME = os.getenv("SERVER_NAME", "VOIDEX HQ")
 
 # The only user ID that can run /antinuke access set / remove
 OWNER_ID: int = 1127835258839113768
